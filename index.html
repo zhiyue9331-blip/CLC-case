@@ -885,6 +885,14 @@ ul { list-style: none; }
 .modal-desc { font-size: .95rem; line-height: 1.95; color: var(--ink-2); }
 .modal-tags-title { margin-top: 20px; font-size: .8rem; font-weight: 700; color: var(--ink-3); letter-spacing: 2px; }
 .modal-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.modal-source {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 18px; padding: 9px 18px; border-radius: 8px;
+  background: var(--green-50); color: var(--green-700);
+  font-size: 14px; font-weight: 600; text-decoration: none;
+  border: 1px solid var(--green-200, #bbf7d0); transition: all .2s;
+}
+.modal-source:hover { background: var(--green-500); color: #fff; border-color: var(--green-500); }
 
 /* ---------- 回到顶部 ---------- */
 .to-top {
@@ -1158,6 +1166,10 @@ ul { list-style: none; }
       <p class="modal-desc" id="modalDesc"></p>
       <p class="modal-tags-title">特征标签</p>
       <div class="modal-tags" id="modalTags"></div>
+      <a class="modal-source" id="modalSource" href="#" target="_blank" rel="noopener" style="display:none;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7M10 14L21 3M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        查看原文报道
+      </a>
     </div>
   </div>
 </div>
@@ -1893,6 +1905,63 @@ function renderNavMenus() {
 /* ================================================================
  * 详情弹窗
  * ================================================================ */
+/* ================================================================
+ * 原文报道链接（自然资源报 i自然 / 自然资源部官网）
+ * 有专属报道的链接到个案全文，其余链接到对应批次发布页
+ * ================================================================ */
+const BATCH1_URL = 'https://www.mnr.gov.cn/dt/ywbb/202406/t20240625_2849402.html';
+const BATCH2_URL = 'https://www.iziran.net/news.html?aid=5343216';
+const BATCH3_URL = 'https://www.iziran.net/news.html?aid=5406482';
+const CASE_URLS = {
+  1:  'https://www.iziran.net/news.html?aid=5341581', // 上海松江泖港镇
+  2:  'https://www.iziran.net/news.html?aid=5341024', // 上海金山廊下镇
+  3:  'https://www.iziran.net/news.html?aid=5340939', // 江苏昆山张浦镇
+  4:  'https://www.iziran.net/news.html?aid=5341648', // 江苏苏州黄桥街道
+  5:  'https://www.iziran.net/news.html?aid=5333037', // 浙江杭州径山镇
+  6:  'https://www.iziran.net/news.html?aid=5327414', // 浙江宁波
+  7:  'https://www.iziran.net/news.html?aid=5330305', // 浙江嘉兴秀洲新塍
+  8:  BATCH1_URL,                                    // 江西瑞昌桂林街道
+  9:  'https://www.iziran.net/news.html?aid=5340643', // 江西余江马荃镇
+  10: 'https://www.iziran.net/news.html?aid=5340051', // 河南商丘民权县
+  11: 'https://www.iziran.net/news.html?aid=5341710', // 湖北孝感朱湖
+  12: 'https://www.iziran.net/news.html?aid=5341376', // 湖南浏阳永安镇
+  13: 'https://www.iziran.net/news.html?aid=5340278', // 广东广州从化区
+  14: 'https://www.iziran.net/news.html?aid=5341217', // 重庆九龙坡铜罐驿镇
+  15: BATCH1_URL,                                    // 陕西安康白河仓上镇
+  16: BATCH2_URL,                                    // 天津宝坻牛家牌镇
+  17: BATCH2_URL,                                    // 吉林白城大安
+  18: BATCH2_URL,                                    // 江苏盐城建湖高作镇
+  19: BATCH2_URL,                                    // 江苏宿迁宿豫新庄镇
+  20: BATCH2_URL,                                    // 江苏无锡惠山洛社镇
+  21: 'https://www.iziran.net/news.html?aid=5370439', // 浙江台州温岭横峰
+  22: BATCH2_URL,                                    // 安徽芜湖无为开城镇
+  23: BATCH2_URL,                                    // 福建莆田荔城木兰溪
+  24: 'https://www.iziran.net/news.html?aid=5451089', // 江西宜春铜鼓大塅
+  25: BATCH2_URL,                                    // 湖北孝感应城杨河镇
+  26: 'https://www.iziran.net/news.html?aid=5362837', // 湖北恩施宣恩椒园
+  27: BATCH2_URL,                                    // 广东梅州蕉岭新铺镇
+  28: BATCH2_URL,                                    // 重庆涪陵大顺乡
+  29: BATCH2_URL,                                    // 四川自贡大安牛佛镇
+  30: 'https://www.iziran.net/news.html?aid=5345879', // 陕西榆林绥德满堂川
+  31: BATCH3_URL,                                    // 江苏如东新店镇
+  32: BATCH3_URL,                                    // 浙江桐乡濮院镇
+  33: BATCH3_URL,                                    // 浙江宁波横街古林
+  34: BATCH3_URL,                                    // 湖南益阳兰溪镇
+  35: BATCH3_URL,                                    // 江西宁都青塘镇
+  36: BATCH3_URL,                                    // 安徽淮北朔里镇
+  37: BATCH3_URL,                                    // 安徽霍山但家庙镇
+  38: BATCH3_URL,                                    // 重庆拾万镇
+  39: BATCH3_URL,                                    // 湖北公安麻豪口镇
+  40: BATCH3_URL,                                    // 江苏盐城秦南镇
+  41: BATCH3_URL,                                    // 湖南沅陵官庄镇
+  42: BATCH3_URL,                                    // 重庆铁门乡
+  43: BATCH3_URL,                                    // 江苏常州邹区镇
+  44: BATCH3_URL,                                    // 浙江长兴吕山乡
+  45: 'https://www.iziran.net/news.html?aid=5427398', // 广西贵港覃塘街道
+  46: 'https://www.iziran.net/news.html?aid=5453114', // 贵州雷山西江镇
+  47: BATCH3_URL                                     // 宁夏石嘴山燕子墩乡
+};
+
 function openModal(id) {
   const p = PROJECTS.find(x => x.id === id);
   if (!p) return;
@@ -1915,6 +1984,15 @@ function openModal(id) {
     </span>`;
   $('modalDesc').textContent = p.desc;
   $('modalTags').innerHTML = p.tags.map(t => `<span class="tag-item">${t}</span>`).join('');
+  /* 原文报道链接 */
+  const src = $('modalSource');
+  const url = CASE_URLS[p.id];
+  if (url) {
+    src.href = url;
+    src.style.display = 'inline-flex';
+  } else {
+    src.style.display = 'none';
+  }
   caseModal.classList.add('open');
   caseModal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
