@@ -1108,7 +1108,7 @@ ul { list-style: none; }
     <div class="about-card">
       <h2>关于本站</h2>
       <p>本站汇集自然资源部公布的第一、二、三批全域土地综合整治试点典型案例，覆盖 18 个省级行政区、共 47 个项目。支持按批次、地区、特征关键词检索，便于查阅各地在耕地保护、生态修复、产业升级与人居环境改善等方面的实践做法。</p>
-      <p class="about-links">设计参考：<a href="https://gtn-caselibrary.org.cn/" target="_blank" rel="noopener">绿色繁荣社区（近/净零碳社区）全球案例库</a></p>
+      <p class="about-links">制作维护：<strong>上海大学全域土地综合整治项目组</strong>　|　设计参考：<a href="https://gtn-caselibrary.org.cn/" target="_blank" rel="noopener">绿色繁荣社区（近/净零碳社区）全球案例库</a></p>
     </div>
   </section>
 </main>
@@ -1134,14 +1134,15 @@ ul { list-style: none; }
     </div>
     <div class="footer-col">
       <h3>联系我们</h3>
-      <p>如需补充或更新案例，欢迎联系本站维护者。</p>
-      <p>案例整理仅供学习研究参考。</p>
+      <p><strong style="color:#fff;">上海大学全域土地综合整治项目组</strong></p>
+      <p>案例补充、纠错或合作交流，欢迎联系项目组。</p>
+      <p>邮箱：landcase@oa.shu.edu.cn</p>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <span>© 2026 全域土地综合整治试点案例库</span>
-      <span>数据来源：自然资源部公开通报的试点典型案例</span>
+      <span>© 2026 上海大学全域土地综合整治项目组 版权所有</span>
+      <span>制作维护：上海大学全域土地综合整治项目组 · 数据来源：自然资源部</span>
     </div>
   </div>
 </footer>
@@ -1779,7 +1780,7 @@ function getFiltered() {
 function cardHTML(p) {
   const investKnown = p.invest !== '—';
   return `
-  <article class="project-card" data-id="${p.id}" tabindex="0" role="button" aria-label="查看 ${p.name} 详情">
+  <article class="project-card" data-id="${p.id}" tabindex="0" role="link" aria-label="查看 ${p.name} 原文报道">
     <div class="card-cover" style="background:${coverStyle(p.province)}">
       <span class="cover-char">${abbrOf(p.province)}</span>
       <span class="batch-badge batch-${p.batch}">${p.batch}</span>
@@ -1801,8 +1802,8 @@ function cardHTML(p) {
       <div class="card-tags">${p.tags.map(t => `<span class="tag-item">${t}</span>`).join('')}</div>
     </div>
     <div class="card-foot">
-      <span>查看详情</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>查看原文报道</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7M10 14L21 3M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
   </article>`;
 }
@@ -1830,7 +1831,10 @@ function renderCards() {
   const shown = results.slice(0, visibleCount);
   cardGrid.innerHTML = shown.map(cardHTML).join('');
   cardGrid.querySelectorAll('.project-card').forEach(card => {
-    const open = () => openModal(Number(card.dataset.id));
+    const open = () => {
+      const url = CASE_URLS[Number(card.dataset.id)];
+      if (url) window.open(url, '_blank', 'noopener');
+    };
     card.addEventListener('click', open);
     card.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
