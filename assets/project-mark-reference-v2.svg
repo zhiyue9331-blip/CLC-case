@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 520 540" fill="none">
+  <title>全域土地综合整治图标</title>
+  <desc>田块网格、绿色叶片与贯穿其间的整治流线。透明背景，不含文字。</desc>
+  <g transform="translate(4 9)">
+    <g stroke="#15543A" stroke-width="15" stroke-linejoin="miter" stroke-linecap="square">
+      <path d="M112 149 186 65 261 22 326 61 360 96"/>
+      <path d="M261 34V267M199 65 184 248M326 65 333 141M142 131H319M160 211H307"/>
+    </g>
+    <path d="M79 148 34 197 36 286C38 350 58 395 98 428C86 386 111 346 161 320L199 298 146 249 134 194 79 148Z" fill="#87BC67" stroke="#15543A" stroke-width="16" stroke-linejoin="miter"/>
+    <path d="M79 174V247L99 282M44 282H153M98 283 118 334V357" stroke="#15543A" stroke-width="14"/>
+    <path d="M172 349C190 356 216 371 245 397L262 440 260 503C215 479 179 444 171 409C165 386 165 366 172 349Z" fill="#53965C" stroke="#15543A" stroke-width="15"/>
+    <path d="M386 96C340 133 308 177 322 216C325 229 331 242 340 254C348 222 365 198 405 179C405 153 398 123 386 96Z" fill="#83BD63" stroke="#FFFFFF" stroke-width="31" stroke-linejoin="miter"/>
+    <path d="M386 96C340 133 308 177 322 216C325 229 331 242 340 254C348 222 365 198 405 179C405 153 398 123 386 96Z" fill="#83BD63" stroke="#15543A" stroke-width="15" stroke-linejoin="miter"/>
+    <path d="M492 163C448 166 416 171 390 183C363 196 351 218 352 248C375 272 407 275 434 260C467 242 484 213 492 163Z" fill="#91C66C" stroke="#FFFFFF" stroke-width="29"/>
+    <path d="M492 163C448 166 416 171 390 183C363 196 351 218 352 248C375 272 407 275 434 260C467 242 484 213 492 163Z" fill="#91C66C" stroke="#15543A" stroke-width="15"/>
+    <path d="M441 205C393 238 341 265 269 293C194 323 141 357 141 404C140 446 182 489 257 510C200 514 145 493 119 465C83 426 91 384 118 350C153 307 208 292 271 274C343 254 397 231 441 205Z" fill="#0B6B3A" stroke="#FFFFFF" stroke-width="17" stroke-linejoin="round"/>
+    <path d="M277 508C268 434 296 367 350 336C386 316 438 304 488 304C485 374 470 428 428 463C388 496 339 508 277 508Z" fill="#8CC56A" stroke="#FFFFFF" stroke-width="29"/>
+    <path d="M277 508C268 434 296 367 350 336C386 316 438 304 488 304C485 374 470 428 428 463C388 496 339 508 277 508Z" fill="#8CC56A" stroke="#15543A" stroke-width="15"/>
+    <path d="M280 503C325 444 369 403 437 359C392 417 347 460 292 509" fill="#15543A"/>
+    <path d="M281 507C322 459 354 427 392 398" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M462 274 476 264 482 290 465 290Z" fill="#15543A"/>
+    <path d="M335 302 349 297 351 321 337 328Z" fill="#15543A"/>
+  </g>
+</svg>
