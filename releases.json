@@ -1,0 +1,469 @@
+{
+  "installers": [
+    {
+      "id": "v040",
+      "version": "0.4.0",
+      "label": "报告编号 1.4.0",
+      "bytes": 86737413,
+      "summary": "新增本地全文检索、命中高亮、材料出处与关联页面定位。",
+      "date": "2026-10-08",
+      "legacy": null,
+      "sha256": "21330874b46565589a76fcb249d2f1681e1fccdcb5d88cca567ec2b7b21b13a4",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v040-research.jpg",
+          "caption": "本地全文检索：关键词、筛选与命中结果",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.4.0）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v053",
+      "version": "0.5.3",
+      "label": "报告编号 1.5.3",
+      "bytes": 88900749,
+      "summary": "扩展域外材料和在线来源，改进正文提取、来源筛选及 robots 校验。",
+      "date": "2026-10-09",
+      "legacy": null,
+      "sha256": "ced65aa8e07882806eaaf45b0d8161ac86881472217e684ce8cfa41dff30f511",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v053-external.jpg",
+          "caption": "域外检索：该历史包收录的材料与来源",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.5.3）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v055-a",
+      "version": "0.5.5",
+      "label": "归档构建 A",
+      "bytes": 88908249,
+      "summary": "改进翻页、查询扩展、接口兼容与来源覆盖。",
+      "date": "2026-10-12",
+      "legacy": null,
+      "sha256": "63b33ebdd3dd1bd4a6e9018fde4caede07bc44c3b5da3d1f78219eb47256607b",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v055-a-external.jpg",
+          "caption": "域外检索：该历史包收录的材料与来源",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.5.5）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v055-a-online.jpg",
+          "caption": "在线检索入口与随包登记的来源清单（未执行联网查询）",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.5.5）；2026-10-20 本地重现。仅展示该包原有来源登记，未执行实时检索。"
+        }
+      ]
+    },
+    {
+      "id": "v055-b",
+      "version": "0.5.5",
+      "label": "归档构建 B",
+      "bytes": 88976636,
+      "summary": "改进翻页、查询扩展、接口兼容与来源覆盖。同号构建差异未单独留档。",
+      "date": "2026-10-12",
+      "legacy": null,
+      "sha256": "908844dd1481dadcf508ec99717101057d60e570a31b4fe95bf44349b5cdc137",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v055-b-external.jpg",
+          "caption": "域外检索：该历史包收录的材料与来源",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.5.5）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v055-b-online.jpg",
+          "caption": "在线检索入口与随包登记的来源清单（未执行联网查询）",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.5.5）；2026-10-20 本地重现。仅展示该包原有来源登记，未执行实时检索。"
+        }
+      ]
+    },
+    {
+      "id": "v060-a",
+      "version": "0.6.0",
+      "label": "归档构建 A",
+      "bytes": 89172362,
+      "summary": "首次加入 fsQCA 编码评分模块。此归档构建在重现时出现 ruleList is not a function，部分区域未渲染；截图保留实际状态。",
+      "date": "2026-10-13",
+      "legacy": null,
+      "sha256": "6993d48acccde88cbd83a345799b0c8452f444fa457842bb62eb472ab4c92cfa",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v060-a-coding.jpg",
+          "caption": "该早期构建的实际界面（存在 ruleList 异常，部分区域未渲染）",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。 此包原有异常如实保留，未修补历史代码。"
+        }
+      ]
+    },
+    {
+      "id": "v060-b",
+      "version": "0.6.0",
+      "label": "归档构建 B",
+      "bytes": 89172434,
+      "summary": "新增 fsQCA 编码评分与证据反查。同号构建差异未单独留档。",
+      "date": "2026-10-13",
+      "legacy": null,
+      "sha256": "ff67c81d5dfbfd2f6a57fb67d85586bbf3efa39bd6f1d414fdbb7c3c2c355790",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v060-b-coding.jpg",
+          "caption": "fsQCA 编码评分与证据反查",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v060-b-heatmap.jpg",
+          "caption": "全库热力矩阵：47 案 × 35 细则",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v060-d",
+      "version": "0.6.0",
+      "label": "归档构建 D",
+      "bytes": 89172416,
+      "summary": "新增 fsQCA 编码评分与证据反查。同号构建差异未单独留档。",
+      "date": "2026-10-13",
+      "legacy": null,
+      "sha256": "fd2f61839b1eab8a4e00b91cb6936ad5a5b2d8d524518f28c636568ea2665129",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v060-d-coding.jpg",
+          "caption": "fsQCA 编码评分与证据反查",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v060-d-heatmap.jpg",
+          "caption": "全库热力矩阵：47 案 × 35 细则",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v060-e",
+      "version": "0.6.0",
+      "label": "归档构建 E",
+      "bytes": 89172124,
+      "summary": "新增 fsQCA 编码评分与证据反查。同号构建差异未单独留档。",
+      "date": "2026-10-13",
+      "legacy": null,
+      "sha256": "6208679dc5ff6435e31fa6ee1d41ea9f3ea5050857e4e7e0b284833cb347aad2",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v060-e-coding.jpg",
+          "caption": "fsQCA 编码评分与证据反查",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v060-e-heatmap.jpg",
+          "caption": "全库热力矩阵：47 案 × 35 细则",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.0）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v061",
+      "version": "0.6.1",
+      "label": "报告编号 1.6.1",
+      "bytes": 89180954,
+      "summary": "新增组态分析、真值表、必要条件分析及多类解展示。",
+      "date": "2026-10-14",
+      "legacy": null,
+      "sha256": "b9950959fd2f718214a819af83598f4a78347754f7ccaac9fc48254cb46dd034",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v061-analysis.jpg",
+          "caption": "组态分析：校准、参数与真值表控制",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.6.1）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v062-early",
+      "version": "0.6.2",
+      "label": "早期构建",
+      "bytes": 89182196,
+      "summary": "修复在线检索超时导致结果丢失等问题，扩充可取回来源。",
+      "date": "2026-10-15",
+      "legacy": null,
+      "sha256": "b596b907193677060f6e10c69cf438dcebc4883165217cfc3d903e9ff80346e7",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v062-early-external.jpg",
+          "caption": "域外检索：该历史包收录的材料与来源",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.2）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v062-early-online.jpg",
+          "caption": "在线检索入口与随包登记的来源清单（未执行联网查询）",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.2）；2026-10-20 本地重现。仅展示该包原有来源登记，未执行实时检索。"
+        }
+      ]
+    },
+    {
+      "id": "v062",
+      "version": "0.6.2",
+      "label": "日志指定正式包，含酒泉来源",
+      "bytes": 89197377,
+      "summary": "修复在线检索超时导致结果丢失等问题；扩充来源并加入酒泉市级替代来源。",
+      "date": "2026-10-15",
+      "legacy": null,
+      "sha256": "8faca2a830b16a6d26ead484b134129bfbd10406739770184c92a7e154665025",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v062-external.jpg",
+          "caption": "域外检索：该历史包收录的材料与来源",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.2）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v062-online.jpg",
+          "caption": "在线检索入口与随包登记的来源清单（未执行联网查询）",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.2）；2026-10-20 本地重现。仅展示该包原有来源登记，未执行实时检索。"
+        }
+      ]
+    },
+    {
+      "id": "v063-a",
+      "version": "0.6.3",
+      "label": "构建 A",
+      "bytes": 89200267,
+      "summary": "统一深色配色与导航，改善 fsQCA 组态分析界面。",
+      "date": null,
+      "legacy": null,
+      "sha256": "e7f6e6959eda335fb77416d8494678899a739db9a6b2814224da4b191898a175",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v063-a-analysis.jpg",
+          "caption": "组态分析：校准、参数与真值表控制",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.3）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v063-b",
+      "version": "0.6.3",
+      "label": "构建 B",
+      "bytes": 89204074,
+      "summary": "统一深色配色与导航，改善 fsQCA 组态分析界面。",
+      "date": null,
+      "legacy": null,
+      "sha256": "64ce2cba1e4951e20e733035039db9d485b51d938234153ded59219626d66812",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v063-b-analysis.jpg",
+          "caption": "组态分析：校准、参数与真值表控制",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.3）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v065-original",
+      "version": "0.6.5",
+      "label": "10 月 19 日原版",
+      "bytes": 89717114,
+      "summary": "新增本版本分析展示与案例变量画像；部分展示内容在后续修订版调整。",
+      "date": "2026-10-19",
+      "legacy": null,
+      "sha256": "8c269dec5a69e6ee3c87b629d014d2fdcad87d3065436a97b1b58f803975b86d",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v065-original-fsqca.jpg",
+          "caption": "fsQCA 变量说明与编码入口",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.5）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v065-original-published.jpg",
+          "caption": "该历史版本的分析展示界面",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.5）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v065-reviewed",
+      "version": "0.6.5",
+      "label": "10 月 20 日展示修订版",
+      "bytes": 89738811,
+      "summary": "精简分析展示，优化字母关联标签和材料摘要，修复部分来源链接。",
+      "date": "2026-10-20",
+      "legacy": null,
+      "sha256": "d524be381c4e96587ce9cacbe41b2c9bd3047e0e17e155f2f5013f5c8bc8fe2c",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v065-reviewed-fsqca.jpg",
+          "caption": "fsQCA 变量说明与编码入口",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.5）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v065-reviewed-published.jpg",
+          "caption": "该历史版本的分析展示界面",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.5）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "v066",
+      "version": "0.6.6",
+      "label": "E99 来源复核版",
+      "bytes": 89739524,
+      "summary": "新增三条 E99 来源复查原因展示，保留已有编码、材料与分析数据。",
+      "date": "2026-10-20",
+      "legacy": null,
+      "sha256": "71bf4df16cc9f8499f4c662a13fbdad0aac67086361ae7c6a29dbf5cdda6eae1",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/v066-fsqca.jpg",
+          "caption": "fsQCA 变量说明与编码入口",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.6）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v066-published.jpg",
+          "caption": "该历史版本的分析展示界面",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.6）；2026-10-20 本地重现。"
+        },
+        {
+          "src": "assets/history/v066-e99.jpg",
+          "caption": "E99 来源复查：保留原始证据状态并显示未通过原因",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 0.6.6）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "legacy100",
+      "version": "1.0.0",
+      "label": "网站版桌面封装",
+      "bytes": 81724483,
+      "summary": "将已有网站版封装为 Windows 桌面程序。",
+      "date": null,
+      "legacy": true,
+      "sha256": "bb0221be715d3da6fd6260f8032b1a28ef96a5648a0891846f8404cbba0c4e71",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/legacy100-library.jpg",
+          "caption": "早期案例库首页与案例浏览",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.0.0）；2026-10-20 本地重现。"
+        }
+      ]
+    },
+    {
+      "id": "legacy101",
+      "version": "1.0.1",
+      "label": "早期政策工具版",
+      "bytes": 81775885,
+      "summary": "试增案例政策工具页面与政策工具二级检索栏。 安装包按归档名称编号，内部版本字段仍为 1.0.0（历史未同步）。",
+      "date": null,
+      "legacy": true,
+      "sha256": "9977652c6184613b98308c1235ee7b8db4f4f519591f26d05980566135debc62",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/legacy101-policy.jpg",
+          "caption": "早期政策工具总览与案例索引",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.0.0）；2026-10-20 本地重现。早期归档文件名标为 1.0.1，其内部 package.json 仍为 1.0.0；这里保留归档编号并如实注明。"
+        }
+      ]
+    },
+    {
+      "id": "legacy11",
+      "version": "1.1",
+      "label": "地方实景背景版",
+      "bytes": 85195229,
+      "summary": "加入地方特色实景背景与案例封面。 安装包按归档名称编号，内部版本字段仍为 1.0.0（历史未同步）。",
+      "date": null,
+      "legacy": true,
+      "sha256": "ef35f88e08efa94a82929ea3a9783d5600da65ce2e59553bb162270827f9d671",
+      "downloadUrl": null,
+      "publicationStatus": "pending",
+      "screenshots": [
+        {
+          "src": "assets/history/legacy11-library.jpg",
+          "caption": "早期案例库首页与案例浏览",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.0.0）；2026-10-20 本地重现。早期归档文件名标为 1.1，其内部 package.json 仍为 1.0.0；这里保留归档编号并如实注明。"
+        },
+        {
+          "src": "assets/history/legacy11-cards.jpg",
+          "caption": "早期地方封面与案例卡片的实际界面",
+          "provenance": "来自该安装包提取的 app.asar（包内版本 1.0.0）；2026-10-20 本地重现。早期归档文件名标为 1.1，其内部 package.json 仍为 1.0.0；这里保留归档编号并如实注明。"
+        }
+      ]
+    }
+  ],
+  "missingInstallers": [
+    {
+      "version": "0.4.1",
+      "status": "开发日志记为规划交付，当前无安装包",
+      "summary": "域外检索方案与执行规格。",
+      "legacy": null
+    },
+    {
+      "version": "0.5.0",
+      "status": "交付报告有安装包记录，当前工作区未找到文件",
+      "summary": "建立域外检索，扩展至新式土地管理多个主题。",
+      "legacy": null
+    },
+    {
+      "version": "0.5.1",
+      "status": "交付报告有安装包记录，当前工作区未找到文件",
+      "summary": "扩充公开来源与可检索正文。",
+      "legacy": null
+    },
+    {
+      "version": "0.5.2",
+      "status": "未找到对应发布记录或安装包",
+      "summary": "暂无足够归档记录。",
+      "legacy": null
+    },
+    {
+      "version": "0.5.4",
+      "status": "有开发记录，当前工作区未找到安装包",
+      "summary": "建立多个政府公开来源的并发检索机制。",
+      "legacy": null
+    },
+    {
+      "version": "0.6.4",
+      "status": "开发日志有打包成功记录，当前工作区未找到安装包",
+      "summary": "更新案例材料与编码数据，完成语料迁移及关联核验。",
+      "legacy": null
+    },
+    {
+      "version": "早期原型（未标版本）",
+      "status": "静态识别为 PyInstaller 单文件程序，缺少可核定版号，不作为正式安装包编号发布",
+      "summary": "存在 8,758,417 字节的 Python 单文件原型；未运行该程序。",
+      "legacy": null
+    }
+  ]
+}

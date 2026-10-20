@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /CLC-case/
+Sitemap: https://shuwgc.github.io/CLC-case/sitemap.xml
